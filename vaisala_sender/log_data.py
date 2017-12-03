@@ -47,6 +47,9 @@ def run():
             json.dump(data, dout)
 
 
-if __name__ == "__main__":
+def main():
     init()
     run()
+
+if __name__ == "__main__":
+    main()

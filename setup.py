@@ -26,4 +26,11 @@ setup(name='ViasalaSender',
       packages=find_packages(),
       zip_safe=False,
       install_requires=["pySensorCloud", "pyWXT5xx"],
-      )
+      entry_points={
+            "console_scripts": [
+                  "viasala_upload = vasiala_sender.upload_data:main",
+                  "viasala_create_sensor_streams = vasiala_sender.create_streams:main",
+                  "log_data = vasiala_sender.log_data:main",
+            ]
+      }
+)

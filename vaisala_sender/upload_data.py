@@ -156,6 +156,9 @@ def run():
             except Exception as e:
                 logger.exception("Error handling: %s"%cache_entry_fn)
 
-if __name__ == "__main__":
+def main():
     init()
     run()
+
+if __name__ == "__main__":
+    main()

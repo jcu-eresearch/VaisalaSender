@@ -50,6 +50,9 @@ def run():
         api_instance = sensor_cloud.DefaultApi()
         api_instance.streams_id_put(stream_id, body)
 
-if __name__ == "__main__":
+def main():
     init()
     run()
+
+if __name__ == "__main__":
+    main()
