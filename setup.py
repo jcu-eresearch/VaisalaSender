@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # Viasala Weather Station (WXT530) logger and uploader.
 # Copyright (C) 2016  NigelB
 #
@@ -14,3 +15,15 @@
 # You should have received a copy of the GNU General Public License along
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+
+from setuptools import setup, find_packages
+
+setup(name='ViasalaSender',
+      version='0.0.1',
+      description='Viasala Weather Station (WXT530) logger and uploader.',
+      author='NigelB',
+      author_email='nigel.blair@gmail.com',
+      packages=find_packages(),
+      zip_safe=False,
+      install_requires=["pySensorCloud", "pyWXT5xx"],
+      )
