@@ -25,7 +25,7 @@ setup(name='ViasalaSender',
       author_email='nigel.blair@gmail.com',
       packages=find_packages(),
       zip_safe=False,
-      install_requires=["pySensorCloud", "pyWXT5xx"],
+      install_requires=["sensor_cloud", "pyWXT5xx"],
       entry_points={
             "console_scripts": [
                   "vasiala_upload = vasiala_sender.upload_data:main",
